@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Materi Elektronika</title>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-36 px-6 lg:px-20">
+    <div class="container mx-auto flex flex-wrap items-center">
+      <!-- Bagian Kiri -->
+      <div class="w-full lg:w-1/2">
+        <h1 class="text-xl font-semibold text-teal-500 md:text-2xl lg:text-3xl">
+          Halo Semua, Saya
+          <span class="block font-bold text-gray-900 text-4xl lg:text-5xl">Muhamad Abdulloh Azzam</span>
+        </h1>
+        <h2 class="font-medium text-gray-600 text-lg mb-5">1AEC4</h2>
+        <p class="text-gray-500 mb-6">
+          Web ini digunakan untuk menyimpan materi mata kuliah
+          <span class="text-gray-950 font-bold">Elektronika</span>.
+        </p>
+
+        <a href="#upload" class="text-white bg-teal-500 py-3 px-8 rounded-full hover:bg-teal-600 transition">Lebih
+          Lanjut</a>
+      </div>
+
+      <!-- Bagian Kanan (Gambar) -->
+      <div class="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center relative">
+        <img src="/static/azzam.png" alt="azzam" class="w-64 lg:w-80 mx-auto z-10">
+        <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 hidden sm:block">
+          <svg width="500" height="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#14b8a6"
+              d="M58.8,-48.2C69.3,-33.6,66.3,-9.6,59.3,10.5C52.2,30.5,41.2,46.6,26.1,53.7C11,60.8,-8.2,58.9,-28.5,51.9C-48.8,45,-70.1,32.9,-74.2,16.4C-78.4,0,-65.4,-20.9,-50.1,-36.5C-34.9,-52.1,-17.5,-62.4,3.3,-65C24.1,-67.7,48.2,-62.7,58.8,-48.2Z"
+              transform="translate(100 100) scale(1.1)" />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Upload Materi -->
+  <section id="upload" class="mt-16 px-6 lg:px-20 bg-white">
+    <div class="container mx-auto max-w-lg bg-white p-6 rounded-lg shadow-lg">
+      <h2 class="text-xl font-semibold text-gray-900 text-center mb-4">Upload Materi</h2>
+
+      <form action="#" method="POST" enctype="multipart/form-data" class="space-y-4">
+        <!-- Input Judul -->
+        <div>
+          <label for="judul" class="block text-gray-700 font-medium">Judul</label>
+          <input type="text" id="judul" name="judul"
+            class="w-full mt-1 px-3 py-2 border rounded-md focus:ring-2 focus:ring-teal-500 focus:outline-none">
+        </div>
+
+        <!-- Input Deskripsi -->
+        <div>
+          <label for="deskripsi" class="block text-gray-700 font-medium">Deskripsi</label>
+          <textarea id="deskripsi" name="deskripsi" rows="3"
+            class="w-full mt-1 px-3 py-2 border rounded-md focus:ring-2 focus:ring-teal-500 focus:outline-none"></textarea>
+        </div>
+
+        <!-- Kotak Upload -->
+        <div class="border-2 border-dashed border-gray-300 p-4 rounded-md text-center hover:border-teal-500 transition">
+          <label for="fileUpload" class="cursor-pointer flex flex-col items-center">
+            <svg class="w-10 h-10 text-gray-400 mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 16V12a4 4 0 014-4h1m5 0h1a4 4 0 014 4v4"></path>
+              <path d="M16 16l-4-4-4 4M12 12v9"></path>
+            </svg>
+            <p class="text-gray-600 text-sm">Drag & Drop atau</p>
+            <span class="text-teal-500 text-sm font-medium hover:underline">Pilih File</span>
+            <input type="file" id="fileUpload" name="fileUpload" class="hidden">
+          </label>
+        </div>
+
+        <!-- Tombol Submit -->
+        <button type="submit" class="w-full bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition">
+          Upload
+        </button>
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>
