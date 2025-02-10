@@ -1,0 +1,22 @@
+# Virtual environment (hanya untuk Python)
+venv/
+
+# Node.js dependencies (Glitch bisa install sendiri)
+node_modules/
+
+# Tailwind input file (opsional, kalau tidak ingin push input.css)
+input.css
+
+
+
+# Cache & file sementara Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Konfigurasi editor lokal (opsional, kalau pakai VS Code)
+.vscode/
+
+# File sistem yang tidak perlu
+.DS_Store
+Thumbs.db
